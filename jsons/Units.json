@@ -1,3 +1,49 @@
 [
+  {
+    "name": "Batterig Ram",
+    "unitType": "Siege",
+    "movement": 1,
+    "strength": 8,
+    "cost": 75,
+    "requiredTech": "The Wheel",
+    "obsoleteTech": "Physics",
+    "upgradesTo": "Siege Tower",
+    "uniques": ["+[150]% Strength vs [City]", "Limited Visibility", "+[50]% Strength when defending"],
+  },
+  {
+    "name": "Siege Tower",
+    "unitType": "Siege",
+    "movement": 1,
+    "strength": 13,
+    "cost": 135,
+    "requiredTech": "Physics",
+    "obsoleteTech": "Chemistry",
+    "upgradesTo": "Cannon",
+    "uniques": ["+[212]% Strength vs [City]", "Rough terrain penalty", "+[33]% Strength when defending"],
+  },
+  {
+    "name": "Battle Engineer",
+    "unitType": "Civilian",
+    "movement": 2,
+    "strength": 35,
+    "cost": 211,
+		"requiredTech": "Metallurgy",
+    "uniques": ["Can build improvements on tiles"],
+  },
+  {
+    "name": "Grenadier"
+    "unitType": "Melee",
+		"movement": 2,
+		"strength": 36,
+		"cost": 270,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"attackSound": "shot"
+	},
+  {
+    "name": "Voltigeur",
+  },
 
+  
 ]
