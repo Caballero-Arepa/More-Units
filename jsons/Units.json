@@ -33,17 +33,98 @@
   {
     "name": "Grenadier"
     "unitType": "Melee",
-		"movement": 2,
-		"strength": 36,
-		"cost": 270,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Great War Infantry",
-		"attackSound": "shot"
+    "movement": 2,
+    "strength": 36,
+    "cost": 270,
+    "requiredTech": "Rifling",
+    "obsoleteTech": "Replaceable Parts",
+    "upgradesTo": "Great War Infantry",
 	},
   {
     "name": "Voltigeur",
   },
-
-  
+		{
+		"name": "Landship",
+		"unitType": "Armor",
+		"movement": 2,
+		"strength": 60,
+		"cost": 350,
+		"requiredTech": "Combustion",
+		"requiredResource": "Oil",
+		"upgradesTo": "Tank",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["No defensive terrain bonus"],
+	},
+	{
+		"name": "Armored Car",
+		"unitType": "Armor",
+		"movement": 4,
+		"range": 1,
+		"strength": 55,
+		"rangedStrength": 50,
+		"cost": 330,
+		"requiredTech": "Combustion",
+		"requiredResource": "Iron",
+		"upgradesTo": "Light Tank",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Rough terrain penalty"],
+	},
+		{
+		"name": "Light Tank",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 67,
+		"cost": 350,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Iron",
+		"upgradesTo": "Mechanized Infantry",
+		"uniques": ["Can move after attacking"]
+	},
+	{
+		"name": "Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength": 45,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 375,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		//"upgradesTo": "Jet Fighter",
+		"uniques": ["[70]% chance to intercept air attacks", "+[150]% Strength vs [Bomber]"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Reconnaissance Plane",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 35,
+		"range": 8,
+		"interceptRange": 10,
+		"cost": 350,
+		"requiredTech": "Radar",
+		//"upgradesTo": "Surveillance Jet",
+		"uniques": ["[100]% chance to intercept air attacks", "+[150]% Strength vs [Bomber]",
+			"6 tiles in every direction always visible"],
+		"attackSound": "shot"
+	},
+  //Mercenaries
+//Unique Units
+		/*  
+	{
+		"name": "Schneider",
+		"unitType": "Armor",
+		"uniqueTo": "France",
+		"replaces": "Landship",
+		"movement": 4,
+		"strength": 58,
+		"cost": 340,
+		"requiredTech": "Combustion",
+		"requiredResource": "Oil",
+		"upgradesTo": "Tank",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus"],
+	},  */
 ]
